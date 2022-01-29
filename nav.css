@@ -1,0 +1,122 @@
+body {
+  margin: 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: 500;
+}
+#head-container {
+  width: 100%;
+  background-color: rgb(44 55 60);
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h3 a{
+  /* font-size: 1.7rem; */
+    color:blanchedalmond;
+    text-decoration: none;
+}
+.horizontal-list {
+  list-style: none;
+}
+.horizontal-list li {
+  display: inline-block;
+  margin: 0 2.5vw;
+}
+.nav-menu a{
+  color: white;
+  text-decoration:none;
+  font-size: 1rem;
+  margin: 0 1rem;
+  text-transform: capitalize;
+}
+.nav-menu a:hover {
+  font-size:1.4rem;
+  color:blanchedalmond;
+  border-bottom: 2px solid blanchedalmond;
+  transition: border-bottom 0.5s ease-in-out;
+}
+#check {
+  display: none;
+  margin: 0;
+}
+@media only screen and (max-width: 700px) {
+  #head-container {
+    display: block;
+  }
+  #header-name {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .nav-menu {
+    position: absolute;
+    background-color: rgba(144, 185, 207, 0.75);
+    /* border: 2px solid black; */
+    width: 100%;
+    opacity: 0;
+    transform: scale(1, 0);
+    transition: transform 400ms ease-in-out;
+    transform-origin: top;
+  }
+  .nav-menu ul {
+    margin: 0;
+    padding: 0%;
+    margin-bottom: 2vh;
+  }
+  .nav-menu li {
+    margin-left: 0rem;
+  }
+  .nav-menu a:hover {
+    color:whitesmoke;
+    font-size: 1rem;
+  }
+  .nav-menu a{
+      color:black;
+  }
+  .horizontal-list li {
+    display: block;
+  }
+  #toggle {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-left: 1rem;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  #check:checked ~ nav {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: transform 300ms ease-in-out 150ms;
+  }
+  #check:checked ~ nav a {
+    opacity: 1;
+  }
+  #toggle span,
+  #toggle span::after,
+  #toggle span::before {
+    height: 2px;
+    width: 2rem;
+    background-color: blanchedalmond;
+    display: block;
+    position: relative;
+  }
+  #toggle span::after,
+  #toggle span::before {
+    content: "";
+  }
+  #toggle span::after {
+      position: absolute;
+      top: 0.5rem;
+  }
+  #toggle span::before {
+    position: absolute;
+    top: -0.5rem;
+  }
+}

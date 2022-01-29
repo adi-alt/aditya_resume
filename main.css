@@ -1,0 +1,289 @@
+body{
+    margin:0px;
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px ;
+}
+
+section:nth-child(2n+1){
+    background-color: rgb(68 86 96);
+    height: 100vh;
+    width: 100vw;
+}
+section:nth-child(2n){
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+}
+.text-align{
+    text-align: center;
+}
+#home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+}
+#main-para{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+#main-para h2{
+    margin-bottom:0.5rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: blanchedalmond;
+}
+#main-para ul li{
+    font-weight: 400;
+    font-size:1.2rem;
+    list-style: none;
+    color: whitesmoke;
+}
+#main-para ul {
+    padding: 0;
+}
+button{
+    font-family: inherit;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-right:8px;
+}
+#btn1[type="button"]{
+    background-color: rgb(44 55 60);
+    color: blanchedalmond;
+    border-radius: 20px;
+    border-color: (68 86 96);
+}
+#btn2[type="button"]{
+    background-color:  rgb(68 86 96);
+    color: whitesmoke;
+    border-radius: 20px;
+    border-color: rgb(44 55 60);
+}
+#btn1:hover{
+    box-shadow: 0px 0px 20px white;
+    background-color: rgb(68 86 96);
+    border-color: rgb(44 55 60);
+    color: whitesmoke;
+}
+#btn2:hover{
+    box-shadow: 0px 0px 20px white;
+    background-color: rgb(44 55 60);
+    border-color: rgb(68 86 96);
+    color: blanchedalmond;
+}
+#my-img{
+    flex-shrink: 1;
+}
+#my-img img{
+   height: 60vh;
+   border-radius: 10px;
+}
+#my-img img:hover{
+   height:62vh;
+   box-shadow:0 0 20px blanchedalmond;
+}
+
+@media only screen and (max-width:1000px) {
+    #main-para h2{
+        font-size: 2.5rem;
+    }
+    #my-img img{
+        height: 55vh;
+    }
+    #my-img img:hover{
+        height:57vh;
+     }
+}
+@media only screen and (max-width: 800px){
+    #my-img img{
+        height: 47vh;
+    }
+    #my-img img:hover{
+        height:48vh;
+     }
+}
+@media only screen and (max-width: 700px){
+    #main-para ul li{
+        font-size:1.2rem;
+    }
+    #my-img img{
+        height: 43vh;
+    }
+    #my-img img:hover{
+        height:44vh;
+     }
+     #main-para h2{ 
+        font-size: 2.2rem;
+    }
+}
+@media only screen and (max-width:600px){
+    button{
+        display: inline-block;
+        width: auto;
+        height: 30px;
+        margin-right:2px;
+    }
+    #my-img img{
+        height: 35vh;
+        border-radius: 10px;
+    }
+    #my-img img:hover{
+        height:36vh;
+        box-shadow:0 0 20px blanchedalmond;
+     }
+    #main-para h2{ 
+        font-size: 2rem;
+    }
+    #main-para ul li{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:500px){
+    #home{
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        flex-direction: column;
+        text-align: center;
+    }
+    button{
+        display: inline-block;
+        width: auto;
+        height: 30px;
+        margin-right:0.5px;
+    }
+    #my-img img{
+        margin-top: 15px;
+        height: 28vh;
+        border-radius: 10px;
+    }
+    #my-img img:hover{
+        height:28.5vh;
+        box-shadow:0 0 20px blanchedalmond;
+     }
+    #main-para h2{ 
+        font-size: 1.8rem;
+    }
+    #main-para ul li{
+        font-size: 1rem;
+    }
+}
+
+/* hobbies */
+#hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hobbies-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+#hobby-heading{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color:rgb(44 55 60);
+}
+#hobby-body{
+    font-size: 1rem;
+    color: rgb(68 86 96);
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#hobby-body img{
+    display: block;
+    height: 10vh;
+    border-radius: 10px;
+}
+#hobby-body img:hover{
+    display: block;
+    height: 14vh;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    box-shadow:0 0 20px rgb(44 55 60);
+    opacity: 0.75;
+}
+.im{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+/* skills */
+#skills{
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#skills-header{
+    color: blanchedalmond;
+    font-size:1.6rem;
+}
+#skills-header:hover{
+    font-size:1.8rem;
+}
+#skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+}
+#skills-body{
+    color: whitesmoke;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-bg{
+    background-color: blanchedalmond;
+    width: 18rem;
+    height: 10px;
+    margin-top: 10px;
+}
+.progress1{
+    background-color:rgb(44 55 60);
+    height: inherit;
+    width: 95%;
+}
+.progress2{
+    background-color:rgb(44 55 60);
+    height: inherit;
+    width: 80%;
+}
+.progress3{
+    background-color:rgb(44 55 60);
+    height: inherit;
+    width: 70%;
+}
+.progress4{
+    background-color:rgb(44 55 60);
+    height: inherit;
+    width: 50%;
+}
+#skills-body img{
+    height: 1.8rem;   
+}
+.diff{
+    margin-top: 10px;
+}

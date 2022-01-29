@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="fevicon" href="./logo.jpeg"/>
+  </head>
+  <body>
+    <header>
+      <div id="head-container">
+        <div id="header-name">
+          <h3><a href="#" class="specificd">Aditya Verma</a></h3>
+        </div>
+        <label for="check" id="toggle"><span></span></label>
+        <input type="checkbox" id="check" />
+        <nav class="nav-menu">
+          <ul class="horizontal-list">
+            <li><a href="#home" class="specifica">home</a></li>
+            <li><a href="#hobbies" class="specificb">hobbies</a></li>
+            <li><a href="#skills" class="specificc">skills</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home" onmouseenter="screen(this)" onmouseout="screen1(this)">
+        
+        <div id="main-para" >
+          <h2 id="main-heading">hey everyone i&apos;m aditya verma</h2>
+          <div>
+            <ul>
+              <li>I am a 2nd year undergrad</li>
+              <li>persuing electrical enginerring</li>
+              <li>from NSUT</li>
+            </ul>
+          </div>
+          <div>
+            <button type="button" id="btn1" onclick="location.href='#hobbies'">
+              my hobbies
+            </button>
+            <button type="button" onclick="location.href='#skills'" id="btn2">
+              skills
+            </button>
+          </div>
+        </div>
+        <div id="my-img">
+            <img src="./photo.jpeg">
+        </div>
+      </section>
+      <section id="hobbies" onmouseenter="screen2(this)" onmouseout="screen3(this)">
+        <div id="hobbies-container">
+          <div id="hobby-heading">
+            <h2>my hobbies</h2>
+          </div>
+          <div id="hobby-body">
+            <div id="coding" class="im">
+              <img src="./logo.jpeg" />
+              <span>
+                <p>coding</p>
+              </span>
+            </div>
+            <div id="coding" class="im">
+              <img src="./football.jpeg" />
+              <span>
+                <p>football</p>
+              </span>
+            </div>
+            <div id="coding" class="im">
+              <img src="./keyboard.jpeg" />
+              <span>
+                <p>keyboard</p>
+              </span>
+            </div>
+            <div id="coding" class="im">
+              <img src="./cycling.jpeg" />
+              <span>
+                <p>cycling</p>
+              </span>
+            </div>
+            <div id="coding" class="im">
+              <img src="./trekking.jpeg" />
+              <span>
+                <p>trekking</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" onmouseenter="screen4(this)" onmouseout="screen5(this)">
+        <div id="skills-container">
+          <div id="skills-header" >
+            <h2>skills</h2>
+          </div>
+          <div id="skills-body">
+            <div class="diff">
+              <div>
+                <img src="./images.png" />
+                <span>cpp</span>
+              </div>
+              <div class="skills-bg">
+                <div class="progress1"></div>
+              </div>
+            </div>
+            <div class="diff">
+              <div>
+                <img src="./html.png" />
+                <span>html</span>
+              </div>
+              <div class="skills-bg">
+                <div class="progress2"></div>
+              </div>
+            </div>
+            <div class="diff">
+              <div>
+                <img src="./CSS3_logo_and_wordmark.svg.png" />
+                <span>css</span>
+              </div>
+              <div class="skills-bg">
+                <div class="progress3"></div>
+              </div>
+            </div>
+            <div class="diff">
+              <div>
+                <img src="./480px-Unofficial_JavaScript_logo_2.svg.png" />
+                <span>javascript</span>
+              </div>
+              <div class="skills-bg">
+                <div class="progress4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js">
+    </script>
+  </body>
+</html>
