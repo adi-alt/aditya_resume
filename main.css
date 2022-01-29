@@ -212,11 +212,11 @@ button{
 }
 #hobby-body img:hover{
     display: block;
-    height: 14vh;
+    height: 11vh;
     border-radius: 10px;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     box-shadow:0 0 20px rgb(44 55 60);
-    opacity: 0.75;
+    /* opacity: 0.75; */
 }
 .im{
     display:flex;
@@ -260,6 +260,9 @@ button{
     width: 18rem;
     height: 10px;
     margin-top: 10px;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* margin-left: 20px; */
 }
 .progress1{
     background-color:rgb(44 55 60);
